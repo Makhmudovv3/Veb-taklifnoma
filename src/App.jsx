@@ -9,7 +9,7 @@ import Location from './components/Location';
 import Gift from './components/Gift';
 import MusicToggle from './components/MusicToggle';
 import { translations } from './utils/translations';
-import bgMusic from './assets/meni-sev.mp3';
+import bgMusic from './assets/rishat.mp3';
 
 function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);

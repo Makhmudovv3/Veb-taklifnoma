@@ -22,15 +22,16 @@ const Calendar = ({ t }) => {
         <h2>{t.title}</h2>
         <div className="calendar-grid">
           {t.days.map(day => <div key={day} className="day-name">{day}</div>)}
-          <div className="day empty"></div><div className="day empty"></div><div className="day empty"></div><div className="day empty"></div>
-          <div className="day">1</div>
-          <div className="day">2</div>
+          <div className="day empty"></div>
+          {Array.from({ length: 7 }, (_, i) => (
+            <div key={i + 1} className="day">{i + 1}</div>
+          ))}
           <div className="day wedding-day">
             <Heart size={44} fill="#db2735" color="#db2735" className="heart-bg" />
-            <span className="day-number">3</span>
+            <span className="day-number">8</span>
           </div>
-          {Array.from({ length: 28 }, (_, i) => (
-            <div key={i + 4} className="day">{i + 4}</div>
+          {Array.from({ length: 23 }, (_, i) => (
+            <div key={i + 9} className="day">{i + 9}</div>
           ))}
         </div>
       </div>
